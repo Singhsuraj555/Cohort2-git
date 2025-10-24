@@ -1,0 +1,57 @@
+* {
+    font-family: 'Courier New';
+}
+
+h1,h3 {
+    color: #b92b27;
+}
+
+ #login {       /* id selector ko aise use krte hai # lagake ye case sensitive hai dhyan se id dale */
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote {       /* class selector ko aise use krte hai . lagake ham multiple chizo k same class dekr apply kar sakte hai*/
+    color: peru;
+}
+
+ nav ul li a {   /*descendent selector ko aise use krte hai hierarcy k jaise likhte hai */
+    color: hotpink;
+}
+
+/* Adjacent sibling combining  */
+/* man lete hai agar kisi paragraph k bad 2 3 heading aa rhe hai pr hame just bad wale ko select krke kch apply krna hai to hai eska use krte hai */
+
+p + h3 {
+    text-decoration: underline;
+}
+
+.upvote + button {
+    background-color: rgb(17, 180, 225);
+}
+
+/* Child combinator */
+div > input {
+    background-color: rgb(223, 239, 78);
+}
+
+/* pseudo class */
+/* eska use ham ek special state provide krane k liye krte :horizontal
+eg., Agar ham chahe ki ham kisi button pr click kre to uska color change ho jaye to ham es property ka use krte hai */
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+h3:hover {
+    text-decoration: none;
+}
+button:active {
+    background-color: hotpink;
+    color: black;
+}
+

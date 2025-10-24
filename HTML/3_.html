@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Tables</li>
+        <li>Forms</li>
+        <li>Buttons</li>
+        <li>Placeholder & labels</li>
+        <li>Checkbox</li>
+        <li>Radio</li>
+        <li>Range</li>
+        <li>Textarea</li>
+    </ul>
+
+    <h1>Table</h1>
+
+    <table border="black">
+        <caption>Food Menu</caption>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Frooti</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Samosa</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <table border="black">
+        <caption>fruit stock</caption>
+        <!-- thead k andr ham table k header section ko likhte jisse hame code structured dikhe-->
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+            </tr>
+
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+        <!-- tbody k andr ham table k body section ko likhte hai -->
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>85</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>85</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Grapes</td>
+                <td>85</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Forms</h1>
+
+    <form action="">
+        <label for="name">Name : </label>  <!-- input me label dene k liye hum id bnate hai aur uske id aur label k for ka name same likhte hai-->
+        <input type="text" placeholder="Enter your name" id="name">
+        <br>
+        <label for="email">Email : </label>
+        <input type="email" placeholder="Enter your Email" id="email">
+        <br>
+        <input type="password" placeholder="Enter your password">
+        <br>
+        <input type="number" placeholder="Enter any number">
+        <br>
+        <input type="date">
+        <br>
+        <input type="month">
+        <br>
+        <input type="time">
+        <br>
+        <button>Submit</button>
+        <br>
+        <h3>Checkbox</h3>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox">I am 18+</label>
+        <br>
+        <h3>Radio </h3>
+        <p>Select your fruit: </p>
+        <input type="radio" id="Apple" name="fruit" value="Apple">
+        <label for="Apple">Apple</label>
+        <input type="radio" id="Banana" name="fruit" value="Banana">
+        <label for="Banana">Banana</label>
+        <input type="radio" id="Grapes" name="fruit" value="Grapes">
+        <label for="Grapes">Grapes</label>
+        <button>Submit</button>
+        <br>
+        <h3>Dropdown</h3>
+        Please choose your profession
+        <select name="profession" id="profession">
+            <option value="">Choose one </option>
+            <option value="Stu">Student</option>
+            <option value="Dev">Developer</option>
+        </select>
+        <br>
+        <h3>Range</h3>
+        <label for="vol">Adjust volume:</label> 
+        <input type="range" id="vol" min="0" max="100" step="10">
+
+        
+    </form>
+</body>
+</html>

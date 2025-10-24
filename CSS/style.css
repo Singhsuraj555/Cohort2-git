@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: Black_widow;
+    src: url(./BlackWidow.ttf);
+}
+@font-face {
+    font-family: beauty;
+    src: url(./Beauty\ Saturday.ttf);
+}
+
+h1{
+    font-family: Black_widow;
+    text-align: center;
+    text-decoration:red underline;
+    text-decoration-style:wavy ;
+    font-size: 50px;
+}
+p{
+    font-family: beauty;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+#background-colouring{
+    margin: 2% auto;
+    height: 500px;
+    width: 1400px;
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: normal;
+    }
+    background: linear-gradient(skyblue,royalblue); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.background-color{
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: auto;
+}
+#box1{
+    background: linear-gradient(orange, green);
+}
+
+#box2{
+    background: linear-gradient(to right,orange, green);
+}
+#box3{
+    background: linear-gradient(to right bottom, orange, green);
+}
+
+#box4{
+    background: radial-gradient(red,orange);
+}
+#box5{
+    background: conic-gradient(violet,indigo,blue,green,yellow,orange,red,violet);
+}
+#box6{
+    background-image: url(./images/cesar-rincon-XHVpWcr5grQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
